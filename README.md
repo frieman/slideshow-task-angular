@@ -1,0 +1,1 @@
+# slideshow-task-angular
