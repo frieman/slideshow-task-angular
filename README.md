@@ -2,6 +2,10 @@
 
 Your task is to develop a Web APP that fetches and iterate over media files (images and videos) from NoviSign API. The app should display media items in a slideshow in a loop, with cross-fade transitions and display duration.
 
+Example of our player:
+https://test.novisign.com/wplayer/#/screen/0f127773-529f-4ff8-b211-af9e5c22a5bc
+No need to make it pre-download etc.
+
 #### NoviSign api
 1. Get playlist:
 
@@ -10,18 +14,20 @@ Inorder to get the  media files you need to fetch 'playlists' and extract the me
 - There can be more then one playlist.
 - In your app you can use the following key:
 ```
-https://test.onsignage.com/PlayerBackend/screen/playlistItems/e490b14d-987d-414f-a822-1e7703b37ce4
+https://test.onsignage.com/PlayerBackend/screen/playlistItems/0f127773-529f-4ff8-b211-af9e5c22a5bc
 ```
 Response E.g:
 ```JSON
 {
-  "screenKey": "e490b14d-987d-414f-a822-1e7703b37ce4",
+  "screenKey": "0f127773-529f-4ff8-b211-af9e5c22a5bc",
   "breakpointInterval": 0,
   "playlists": [
     {
       "channelTime": 0,
       "playlistItems": [
-        "fileKey": "62ee6d0f-e058-43ce-907c-4133f12999c1.jpg"
+        "fileKey": "pixabayImage-1518843.jpg",
+        "creativeKey": "b1f1b49b-46b8-49ef-8177-309d28128bf7.jpg",
+        ...
       ]
     }
   ]
@@ -33,7 +39,7 @@ Response E.g:
 In order to recieve the media file you should call NoviSign's API with the relevant file key.
 E.g:
 ```
-https://test.onsignage.com/PlayerBackend/creative/get/2abbf8c1-396d-4fac-9a68-820c1abc6d96.png
+https://test.onsignage.com/PlayerBackend/creative/get/b1f1b49b-46b8-49ef-8177-309d28128bf7.jpg
 ```
 ### Bonus 
 Check for playlist updates and display accordingly, without starting it over again.
