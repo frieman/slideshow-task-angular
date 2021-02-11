@@ -27,7 +27,6 @@ Response E.g:
       "playlistItems": [
         "fileKey": "pixabayImage-1518843.jpg",
         "creativeKey": "b1f1b49b-46b8-49ef-8177-309d28128bf7.jpg",
-        ...
       ]
     }
   ]
