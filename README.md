@@ -2,10 +2,6 @@
 
 Your task is to develop a Web APP that fetches and iterate over media files (images and videos) from NoviSign API. The app should display media items in a slideshow in a loop, with cross-fade transitions and display duration.
 
-Example of our player:
-https://test.novisign.com/wplayer/#/screen/0f127773-529f-4ff8-b211-af9e5c22a5bc
-No need to make it pre-download etc.
-
 #### NoviSign api
 1. Get playlist:
 
