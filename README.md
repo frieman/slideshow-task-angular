@@ -7,7 +7,7 @@ Your task is to develop a Web APP that fetches and iterate over media files (ima
 1. Get playlist:
 
 Inorder to get the  media files you need to fetch 'playlists' and extract the media files to display over the screen.
-Create a  page where you can paste a 'screen key' (0f127773-529f-4ff8-b211-af9e5c22a5bc) with that screen key you will be able to fetch the playlist and media files. After pasting the screen key user will be able to press 'play' button and play the playlist and media files.
+Create a  page where you can paste a 'screen key' (294d453d-9176-44c2-9db9-f2759031e8e4) with that screen key you will be able to fetch the playlist and media files. After pasting the screen key user will be able to press 'play' button and play the playlist and media files.
 
 Note:
 - The playlist might be empty.
@@ -15,19 +15,19 @@ Note:
 
 In your app you can use the following 'screen key':
 ```
-https://test.onsignage.com/PlayerBackend/screen/playlistItems/0f127773-529f-4ff8-b211-af9e5c22a5bc
+https://test.onsignage.com/PlayerBackend/screen/playlistItems/294d453d-9176-44c2-9db9-f2759031e8e4
 ```
 Response E.g:
 ```JSON
 {
-  "screenKey": "0f127773-529f-4ff8-b211-af9e5c22a5bc",
+  "screenKey": "294d453d-9176-44c2-9db9-f2759031e8e4",
   "breakpointInterval": 0,
   "playlists": [
     {
       "channelTime": 0,
       "playlistItems": [
-        "fileKey": "pixabayImage-1518843.jpg",
-        "creativeKey": "b1f1b49b-46b8-49ef-8177-309d28128bf7.jpg",
+        "duration": 10,
+        "creativeKey": "6daa1483-4fe0-4424-9d82-1ec1c3423a33.jpg",
       ]
     }
   ]
@@ -36,7 +36,7 @@ Response E.g:
 
 2. Get media files:
 
-In order to fetch the media file you should call NoviSign's API with the relevant file key.
+In order to fetch the media file you should call NoviSign's API with the relevant creative key.
 E.g:
 ```
 https://test.onsignage.com/PlayerBackend/creative/get/b1f1b49b-46b8-49ef-8177-309d28128bf7.jpg
