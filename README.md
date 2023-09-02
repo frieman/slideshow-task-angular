@@ -55,7 +55,8 @@ Check for playlist updates and display accordingly, without starting it over aga
 6. README file and Reasonable comments (where needed)
 
 ##### Question:
-How would you have implement the Bonus question? (If you hadnt implmented it :) )
+1. How would you have implement the Bonus question? (If you hadnt implmented it :) )
+2. How would you support offline mode? E.g in case the computer reboot and returns without internet.
 
 Answer the question in an Answers.txt file
 
